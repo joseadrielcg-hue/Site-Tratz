@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções em Tecnologia e Pesquisa</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        secondary: '#3b82f6', // Blue 500
+                        accent: '#2563eb', // Blue 600
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Efeito suave de hover nos cards */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Cabeçalho (Header) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24 md:h-28">
+                <!-- Logo / Nome da Empresa -->
+                <div class="flex-shrink-0 flex items-center h-full py-2">
+                    <img src="Gemini_Generated_Image_5uhxxb5uhxxb5uhx.jpeg" alt="Tratz Soluções e Consultoria em TI" class="h-full max-h-20 md:max-h-24 w-auto object-contain">
+                </div>
+                <!-- Navegação Desktop -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-gray-600 hover:text-accent px-3 py-2 rounded-md font-medium transition-colors">Início</a>
+                    <a href="#servicos" class="text-gray-600 hover:text-accent px-3 py-2 rounded-md font-medium transition-colors">Serviços</a>
+                    <a href="#contato" class="bg-accent text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors shadow-md">Fale Conosco</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Início) -->
+    <section id="inicio" class="bg-primary text-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                Soluções Integradas em <span class="text-secondary">Tecnologia e Dados</span>
+            </h1>
+            <p class="mt-4 max-w-2xl text-xl text-gray-300 mx-auto mb-10">
+                Transformamos desafios complexos em soluções inovadoras através de software, análise de dados e pesquisa estratégica.
+            </p>
+            <a href="#servicos" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-primary bg-white hover:bg-gray-100 transition-colors shadow-lg">
+                Conheça nossos serviços
+                <i class="fa-solid fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="py-20 bg-gray-50 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-base text-accent font-semibold tracking-wide uppercase">Nossa Expertise</h2>
+                <p class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    Portfólio de Serviços
+                </p>
+                <p class="mt-4 max-w-2xl text-lg text-gray-500 mx-auto">
+                    Oferecemos um leque completo de soluções para impulsionar o seu negócio na era digital.
+                </p>
+            </div>
+
+            <!-- Grid de Cards de Serviços -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Infraestrutura e Dados</h3>
+                    <p class="text-gray-600 text-sm flex-grow">Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Software Customizável</h3>
+                    <p class="text-gray-600 text-sm flex-grow">Desenvolvimento e licenciamento de programas de computador sob medida (customizáveis).</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Software Padrão</h3>
+                    <p class="text-gray-600 text-sm flex-grow">Desenvolvimento e licenciamento de programas de computador não-customizáveis.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Consultoria em TI e Dados</h3>
+                    <p class="text-gray-600 text-sm flex-grow">Consultoria especializada em tecnologia da informação com foco em análise de dados (Data Analytics).</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Portais e Conteúdo</h3>
+                    <p class="text-gray-600 text-sm flex-grow">Desenvolvimento de portais, provedores de conteúdo e outros serviços de informação na internet.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Pesquisa Social e Humana</h3>
+                    <p class="text-gray-600 text-sm flex-grow">Pesquisa e desenvolvimento experimental aplicados em ciências sociais e humanas.</p>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Organização de Eventos</h3>
+                    <p class="text-gray-600 text-sm flex-grow">Serviços completos de organização de feiras, congressos, exposições e festas corporativas.</p>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Pesquisas de Mercado</h3>
+                    <p class="text-gray-600 text-sm flex-grow">Realização e análise de pesquisas de mercado e sondagens de opinião pública.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Pronto para começarmos?</h2>
+            <p class="text-lg text-gray-600 mb-10">
+                Entre em contato com nossa equipe para discutir o seu projeto. Estamos disponíveis via WhatsApp ou E-mail.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <!-- Botão WhatsApp -->
+                <a href="https://wa.me/5581973324545" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-xl text-white bg-[#25D366] hover:bg-[#1fa951] transition-colors shadow-lg shadow-green-200">
+                    <i class="fa-brands fa-whatsapp text-2xl mr-3"></i>
+                    <div class="text-left">
+                        <span class="block text-xs opacity-90 font-normal">Fale no WhatsApp</span>
+                        <span class="block text-lg">(81) 97332-4545</span>
+                    </div>
+                </a>
+
+                <!-- Botão Email -->
+                <a href="mailto:contato@tctratz.com.br" 
+                   class="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-xl text-white bg-primary hover:bg-gray-800 transition-colors shadow-lg shadow-gray-300">
+                    <i class="fa-regular fa-envelope text-2xl mr-3"></i>
+                    <div class="text-left">
+                        <span class="block text-xs opacity-90 font-normal">Envie um e-mail</span>
+                        <span class="block text-lg">contato@tctratz.com.br</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-primary text-gray-400 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2026 Tratz Soluções e Consultoria em TI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
